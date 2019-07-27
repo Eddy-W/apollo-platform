@@ -72,8 +72,9 @@ function build_ros() {
     ln -sf ${TP_LIB_PATH}_${MACHINE_ARCH} ${TP_LIB_PATH} &&
 
     ./catkin/bin/catkin_make_isolated --install --source . \
+       	-DCMAKE_CXX_FLAGS=\"-std=c++11\" \
         --install-space ${INSTALL_PATH} -DCMAKE_BUILD_TYPE=${BUILD_TYPE} \
-       -DFASTRTPS_PATH=${FASTRTPS_PATH} --cmake-args --no-warn-unused-cli &&
+        -DFASTRTPS_PATH=${FASTRTPS_PATH} --cmake-args --no-warn-unused-cli &&
  
     cp -r ${CURRENT_PATH}/third_party/fast-rtps/lib/* ${INSTALL_PATH}/lib/ &&
     cp -r ${CURRENT_PATH}/third_party/lib/* ${INSTALL_PATH}/lib/ &&
