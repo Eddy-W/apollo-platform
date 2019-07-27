@@ -16,8 +16,8 @@
 
   git clone https://github.com/ros/diagnostics.git -b indigo-devel
   git clone https://github.com/ros/roslint.git
-git clone https://github.com/Eddy-W/jsk_rviz_plugins_light.git
-git clone https://github.com/ros-visualization/view_controller_msgs.git
-git clone https://github.com/ros/media_export.git -b indigo-devel
+  git clone https://github.com/Eddy-W/jsk_rviz_plugins_light.git
+  git clone https://github.com/ros-visualization/view_controller_msgs.git
+  git clone https://github.com/ros/media_export.git -b indigo-devel
 
 ```
